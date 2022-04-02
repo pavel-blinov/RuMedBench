@@ -1,0 +1,1 @@
+> Important! This repository do not contain RuMedNLI files, please download them (`ru_mli_train_v1.jsonl`, `ru_mli_dev_v1.jsonl` and `ru_mli_test_v1.jsonl`) from [RuMedNLI: A Russian Natural Language Inference Dataset For The Clinical Domain](https://doi.org/10.13026/gxzd-cf80) to the `raw` directory. Then run `python tasks_builder.py` from the `code/` directory.
