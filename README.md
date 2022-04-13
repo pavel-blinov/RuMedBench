@@ -1,3 +1,5 @@
+![Python 3.7](https://img.shields.io/badge/python-3.7-green.svg)
+
 # RuMedBench
 A **Ru**ssian **Med**ical language understanding **Bench**mark is the set of NLP tasks on medical textual data for the Russian language.
 
