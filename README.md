@@ -5,6 +5,8 @@ A **Ru**ssian **Med**ical language understanding **Bench**mark is the set of NLP
 
 This repository contains code and data to reproduce the results of the paper [*RuMedBench: A Russian Medical Language Understanding Benchmark*](https://arxiv.org/abs/2201.06499).
 
+[Video from the AIME 2022 conference](https://youtu.be/ZO7BoRzJdmE)
+
 ## Tasks Descriptions
 - **RuMedTop3**\* is the task for diagnosis prediction from a raw medical text, including patient symptoms and complaints.
 

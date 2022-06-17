@@ -134,5 +134,5 @@ if __name__ == '__main__':
         fname = os.path.join(data_path, 'raw', 'ru_mli_{}_v1.jsonl'.format(part))
         jsonl2jsonl(
             fname,
-            os.path.join(data_path, 'RuMedNLI', 'mli_{}_v1.jsonl'.format(part))
+            os.path.join(data_path, 'RuMedNLI', '{}_v1.jsonl'.format(part))
         )
