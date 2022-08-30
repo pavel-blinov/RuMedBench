@@ -32,13 +32,17 @@ Test results:
 | Model | RuMedTop3 | RuMedSymptomRec | RuMedDaNet | RuMedNLI | RuMedNER | Overall |
 | ------ | :------: | :------: | :------: | :------: | :------: | :------: |
 |Naive | 10.58/22.02 | 1.93/5.30 | 50.00 | 33.33 | 93.66/51.96 | 35.21 |
-|Feature-based | 49.76/72.75  |  32.05/49.40  |   51.95 |  59.70  | 94.40/62.89 |  58.46  |
+|Feature-based | **49.76/72.75**  |  32.05/49.40  |   51.95 |  59.70  | 94.40/62.89 |  58.46  |
 |BiLSTM | 40.88/63.50  |  20.24/31.33  |   52.34 |  60.06  | 94.74/63.26 |  53.87  |
 |RuBERT | 39.54/62.29 | 18.55/34.22 | 67.19 | 77.64 | 96.63/73.53 | 61.44 |
 |RuPoolBERT | 47.45/70.44 | 34.94/52.05 | 71.48 | 77.29 | 96.47/73.15 | 67.20 |
-|Human | 25.06/48.54 | 7.23/12.53 | 93.36 | 83.26 | 96.09/76.18 | 61.89 |
+|RuBioBERT* | 43.55/68.86 | 28.94/44.55 | 53.91 | 80.31 | 96.63/75.97 | 62.69 |
+|RuBioRoBERTa* | 46.72/72.87 | **44.01/58.95** | 76.17 | 82.77 | **97.19/77.81** | **71.54** |
+|Human | 25.06/48.54 | 7.23/12.53 | **93.36** | **83.26** | 96.09/76.18 | 61.89 |
 
 We define the overall model score as mean over all metric values (with prior averaging in the case of two metrics).
+
+\* this is implementation from the paper [RuBioRoBERTa: a pre-trained biomedical language model for Russian language biomedical text mining](https://arxiv.org/abs/2204.03951) ([repository](https://github.com/alexyalunin/RuBioRoBERTa)).
 
 ## How to Run
 Please refer to the [`code/`](code/) directory.
