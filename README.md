@@ -44,6 +44,8 @@ We define the overall model score as mean over all metric values (with prior ave
 
 \* this is implementation from the paper [RuBioRoBERTa: a pre-trained biomedical language model for Russian language biomedical text mining](https://arxiv.org/abs/2204.03951) ([repository](https://github.com/alexyalunin/RuBioRoBERTa)).
 
+You can find the extension of this benchmark (with closed test sets) on the [MedBench platform](https://medbench.ru/).
+
 ## How to Run
 Please refer to the [`code/`](code/) directory.
 
