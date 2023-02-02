@@ -9,14 +9,16 @@
 - `batch_size = 10`
 - `epochs = 25`
 - `lr = 2e-5`
+
 ### В задаче RuMedNLI следующие гиперпараметры:
 - `seed = 128`
-- `batch_size = 16`
+- `batch_size = 8`
 - `epochs = 25`
 - `lr = 3e-5`
 
 ### Для запуска:
 `pip install -r requirements.txt`
 
-Открыть соответствующий блокнот и выполнить все ячейки
-Результат работы ноутбуков сохраняется в архив solutions.zip
+Открыть блокнот каждой задачи и выполнить все ячейки
+
+Добавить все решения в zip-архив - `zip -r solution.zip RuMedTest.jsonl RuMedNLI.jsonl RuMedDaNet.jsonl`
