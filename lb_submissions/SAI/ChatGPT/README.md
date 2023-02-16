@@ -94,5 +94,7 @@ It may be worth exploring such cases with domain experts to ensure that test que
 
 ### Files descriptions
 `chat-rmb.ipynb` - the main codebase for interaction with the model
+
 `*.jsonl` - answer files
+
 `rm*` - files with intermediate data and logs
