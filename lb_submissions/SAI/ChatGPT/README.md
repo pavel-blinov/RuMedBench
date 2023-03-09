@@ -3,6 +3,7 @@
 ## Summary
 We tested the performance of the ChatGPT (proxied by `text-davinci-003`) model on RuMedBench tasks with the following results:
 - RuMedTest: 35.0%  (above other models to date, yet way below human level)
+
 -- Random guessing from 1,000 attempts gives the following statistics about the metric: (min, mean, max) = (19.14%, 24.85%, 31.74%)
 - RuMedDaNet: 89.3%  (way above other models to date, closer to human level)
 - RuMedNLI: 61.3%  (lagging behind other models to date, way below human level)
