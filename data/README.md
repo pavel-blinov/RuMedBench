@@ -52,6 +52,17 @@ Each task directory (starting with *RuMed*\*) contains `train/dev/test` data fil
 }
 ```
 
+### ECG2Pathology
+```
+{
+    "record_name": "00009_hr",
+    "age": 55.0,
+    "sex": 0,
+    ...,
+    "targets": [37,54]
+}
+```
+
 <details>
   <summary>raw</summary>
 
