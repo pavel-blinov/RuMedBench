@@ -29,7 +29,7 @@ We have implemented several baseline models; please see details in the paper.
 - **RuMedTop3** and **RuMedSymptomRec** - *Hit@3*
 - **RuMedNER** - *F1-score*
 
-Test results:
+Test results for the NLP-tasks:
 
 | Model | RuMedTop3 | RuMedSymptomRec | RuMedDaNet | RuMedNLI | RuMedNER | Overall |
 | ------ | :------: | :------: | :------: | :------: | :------: | :------: |
@@ -41,6 +41,13 @@ Test results:
 |RuBioBERT* | 43.55/68.86 | 28.94/44.55 | 53.91 | 80.31 | 96.63/75.97 | 62.69 |
 |RuBioRoBERTa* | 46.72/72.87 | **44.01/58.95** | 76.17 | 82.77 | **97.19/77.81** | **71.54** |
 |Human | 25.06/48.54 | 7.23/12.53 | **93.36** | **83.26** | 96.09/76.18 | 61.89 |
+
+Test results for the ECG2Pathology task:
+
+| Model | Macro-F1 |
+| ------ | :------: |
+|Human | 39.34 |
+|Naive | 1.15 |
 
 We define the overall model score as mean over all metric values (with prior averaging in the case of two metrics).
 
