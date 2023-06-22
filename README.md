@@ -18,7 +18,7 @@ This repository contains code and data to reproduce the results of the paper [*R
 
 - **RuMedNER** is the task of named entity recognition in drug-related user reviews. The data is from the [RuDReC](https://github.com/cimm-kzn/RuDReC) repo.
 
-- **ECG2Pathology** is the task of estimating the quality of multilabel classification on ECG signals from the [PTB-XL dataset](https://physionet.org/content/ptb-xl/).
+- **ECG2Pathology** is the task of assessment the quality of multilabel classification on ECG signals from the [PTB-XL dataset](https://physionet.org/content/ptb-xl/).
 
 \*Both tasks are based on the [RuMedPrime](https://zenodo.org/record/5765873#.YbBlXT9Bzmw) dataset.
 
