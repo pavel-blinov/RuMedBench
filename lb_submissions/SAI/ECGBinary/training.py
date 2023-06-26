@@ -13,22 +13,23 @@ import argparse
 from pathlib import Path
 import json
 
+
 def main(args):
     # Fix seed
     set_seed(seed = args.random_state)
     # Logger
-    logger = logging.getLogger('baseline_1_training')
+    logger = logging.getLogger('binary_baseline_training')
     log_format = '%(asctime)s %(message)s'
     logging.basicConfig(stream=sys.stdout, level=logging.INFO,
                         format=log_format, datefmt='%m/%d %I:%M:%S %p', filemode='w')
-    fh = logging.FileHandler(Path(args.model_path) / "log_1.txt")
+    fh = logging.FileHandler(Path(args.model_path) / "log_binary.txt")
     fh.setFormatter(logging.Formatter(log_format))
     logger.addHandler(fh)
     # Data preparing
     with open(Path(args.data_path)  / "train/idx2pathology.jsonl", "r") as f:
         classes = json.load(f)
     for class_name in classes:
-        logger.info("---------- Working with %s ----------" % (class_name))
+        logger.info("---------- Working with %s ----------" % (classes[class_name]))
         X_train, X_val, y_train, y_val, names_train, names_val = get_dataset_baseline(args.data_path, classes[class_name], int(class_name), "train", args.random_state)
         X_public, names_public = get_dataset_baseline(args.data_path, classes[class_name], int(class_name), "test", args.random_state)
         model = CNN1dMultihead()
