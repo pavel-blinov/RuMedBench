@@ -1,0 +1,7 @@
+torch
+numpy
+pandas
+iterative-stratification
+scikit-learn
+tqdm
+tensorboard
