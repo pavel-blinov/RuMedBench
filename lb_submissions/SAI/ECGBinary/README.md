@@ -2,4 +2,5 @@
 
 ### Для запуска кода
 
-`pip install -r requirements.txt` - запуск обучения и предсказания
+`pip install -r requirements.txt`
+`python training.py data_path model_path #запуск обучения и предсказания`
