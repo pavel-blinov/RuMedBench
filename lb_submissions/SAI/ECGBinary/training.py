@@ -65,7 +65,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description = 'Baselines training script (1d-CNN)')
     parser.add_argument('data_path', help='dataset path (path to the folder containing test and train subfolders)', type=str)
     parser.add_argument('model_path', help='path to save the model and logs', type=str)
-    parser.add_argument('--cuda_id', help='CUDA device number on a single GPU; use -1 if yu want to work on CPU', type=int, default=1)
+    parser.add_argument('--cuda_id', help='CUDA device number on a single GPU; use -1 if yu want to work on CPU', type=int, default=0)
     parser.add_argument('--k', help='number of positive examples for class', type=int, default=11)
     parser.add_argument('--num_epochs', help='number of epochs', type=int, default=5)
     parser.add_argument('--random_state', help='random state number', type=int, default=19)
