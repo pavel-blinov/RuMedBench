@@ -1,29 +1,9 @@
 import numpy as np
 import pandas as pd
-import os
 from pathlib import Path
-    
-from iterstrat.ml_stratifiers import MultilabelStratifiedShuffleSplit
 from sklearn.model_selection import train_test_split
-from pathlib import Path
-
-from tqdm import tqdm
 
 
-# Iterative stratification
-def make_stratification(df, strat_matrix, random_state):
-    msss = MultilabelStratifiedShuffleSplit(n_splits=1, test_size=0.3, random_state=random_state)
-    train_split, test_split = list(msss.split(df.record_name.values[:,None], strat_matrix))[0]
-    # Obtain record numbers
-    train_names = df.loc[train_split, "record_name"].values
-    test_names = df.loc[test_split, "record_name"].values
-    # Make val/test split
-    msss = MultilabelStratifiedShuffleSplit(n_splits=1, test_size=0.5, random_state=random_state)
-    val_split, test_split = list(msss.split(test_names[:,None], strat_matrix[test_split]))[0]
-    assert np.intersect1d(train_names, test_names[val_split]).shape[0] == 0 & np.intersect1d(test_names[val_split], test_names[test_split]).shape[0] == 0 & np.intersect1d(test_names[test_split], train_names).shape[0] == 0, "В разбияниях повторяются записи!"
-    return train_names, test_names[val_split], test_names[test_split]
-    
-    
 ##### Split for the N models baseline ######
 def get_dataset_baseline(data_path, class_name, class_id, dtype, random_state):
     assert dtype in ["train", "test"]
