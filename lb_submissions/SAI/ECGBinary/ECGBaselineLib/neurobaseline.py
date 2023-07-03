@@ -1,5 +1,4 @@
 import numpy as np
-import pandas as pd
 import random
 
 import torch
@@ -9,7 +8,7 @@ from torch.utils.data import Dataset, DataLoader
 import torch.nn.functional as F
 from torch.utils.tensorboard import SummaryWriter
 
-from sklearn.metrics import f1_score, average_precision_score
+from sklearn.metrics import average_precision_score
 from .utils import find_threshold_f1
 
 import os
