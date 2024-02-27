@@ -1,0 +1,7 @@
+config*.ini
+*.log
+MedBench
+*.db
+*.xml
+logs*
+RuMedTest--sogma--dev.jsonl

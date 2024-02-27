@@ -16,7 +16,7 @@ HDD 16GB
 ## General Description
 Each directory `bert`, `bilstm` and `linear_models` contains a baseline model.
 
-Generally, a model sould produce output directory (e.g. `bert/out`) with result `jsonl` files named after the task name (e.g. `RuMedTop3.jsonl`).
+Generally, a model should produce output directory (e.g. `bert/out`) with result `jsonl` files named after the task name (e.g. `RuMedTop3.jsonl`).
 
 Each file contains same samples as in test parts enhanced with the `prediction` field.<br/>
 Examples,<br/>
