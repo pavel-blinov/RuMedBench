@@ -3,11 +3,13 @@
 ## Summary
 
 We tested the performance of the Gigachat (`GigachatPro, uncensored, 2024-03-04`) model on RuMedBench tasks with the following results:
+
 | Task       | Result |
 |------------+--------|
 | RuMedNLI   |`65.17%`|
 | RuMedDaNet |`92.58%`|
 | RuMedTest  |`72.04%`|
+
 ## Experiments description
 ### RuMedDaNet ( `rumed_da_net.py` )
 
@@ -21,6 +23,7 @@ Only one simple prompt was used -- just `{context}`, `{question}` and request to
 2. **Complex doctor prompt with chat**: one prompt (with doctor role description, instruction and request to __respond in details__) sent to LLM. Then, if response isn't specific, new request with chat history sent to LLM. (only 3 times maximum)
 
 **Accuracy (dev)**:
+
 | Approach            | Accuracy  |
 |---------------------+-----------|
 | v0: simple          | `60.55 %` |
