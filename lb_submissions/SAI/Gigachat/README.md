@@ -5,7 +5,7 @@
 We tested the performance of the Gigachat (`GigachatPro, uncensored, 2024-03-04`) model on RuMedBench tasks with the following results:
 
 | Task       | Result |
-|------------+--------|
+|------------|--------|
 | RuMedNLI   |`65.17%`|
 | RuMedDaNet |`92.58%`|
 | RuMedTest  |`72.04%`|
@@ -25,7 +25,7 @@ Only one simple prompt was used -- just `{context}`, `{question}` and request to
 **Accuracy (dev)**:
 
 | Approach            | Accuracy  |
-|---------------------+-----------|
+|---------------------|-----------|
 | v0: simple          | `60.55 %` |
 | v1: doctor + prompt | `67.51 %` |
 | v2: doctor + chat   | `67.93 %` |
