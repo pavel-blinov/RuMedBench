@@ -2,7 +2,7 @@ set -e
 sogma_xml_file="sogma-test.xml"
 sogma_jsonl_file="RuMedTest--sogma--dev.jsonl"
 medbench_url="https://medbench.ru/files/MedBench_data.zip"
-medbench_dir="MedBench"
+medbench_dir="../../../data"
 medbench_zip_path="$medbench_dir/MedBench_data.zip"
 
 if [ ! -e "$sogma_jsonl_file" ]; then

@@ -5,3 +5,4 @@ gigachain
 pandas==1.5.3
 tqdm==4.66.1
 xmltodict==0.13.0
+certifi

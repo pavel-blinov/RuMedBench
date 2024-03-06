@@ -5,9 +5,9 @@
 We tested the performance of the Gigachat (`GigachatPro, uncensored, 2024-03-04`) model on RuMedBench tasks with the following results:
 | Task       | Result |
 |------------+--------|
-| RuMedNLI   | TODO   |
-| RuMedDaNet | TODO   |
-| RuMedTest  | TODO   |
+| RuMedNLI   |`65.17%`|
+| RuMedDaNet |`92.58%`|
+| RuMedTest  |`72.04%`|
 ## Experiments description
 ### RuMedDaNet ( `rumed_da_net.py` )
 
@@ -58,12 +58,14 @@ Approach `v6` was used for test evaluation.
 ## Usage
 0. Put `config.ini` with Gigachat credentials to this directory.
 
-Example of content:
+Example of content (without <> brackets):
 ```ini
 [credentials]
 user = <your-user>
 credentials = <your-credentials>
 scope = <your-scope>
+[base_url]
+base_url = https://developers.sber.ru/...
 ```
 
 1. Run `s00-prepare.sh` to download tests.
