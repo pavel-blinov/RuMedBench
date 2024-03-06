@@ -59,20 +59,21 @@ For prompt evaluation sogma dataset was used [link](https://geetest.ru/tests/ter
 
 Approach `v6` was used for test evaluation.
 ## Usage
+-1. Run `pip install -r requirements.txt`
 0. Put `config.ini` with Gigachat credentials to this directory.
 
 Example of content (without <> brackets):
 ```ini
 [credentials]
-user = <your-user>
-credentials = <your-credentials>
-scope = <your-scope>
+user = your-user
+credentials = your-credentials
+scope = your-scope
 [base_url]
 base_url = https://developers.sber.ru/...
 ```
 
 1. Run `s00-prepare.sh` to download tests.
-2. Run `s01-run-all-trains.sh` to evaluate train/dev.
+2. Run `s01-run-all-trains.sh` to evaluate train/dev. (optional)
 3. Run `s02-run-all-tests.sh` to generate test samples.
 ### Notes
 - you can reuse this framework to check other LLMS: replace `rumed_utils#create_llm_gigachat` with something else
