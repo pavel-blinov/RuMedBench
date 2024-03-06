@@ -59,7 +59,8 @@ For prompt evaluation sogma dataset was used [link](https://geetest.ru/tests/ter
 
 Approach `v6` was used for test evaluation.
 ## Usage
--1. Run `pip install -r requirements.txt`
+-1. Run `pip install -r requirements.txt`.
+
 0. Put `config.ini` with Gigachat credentials to this directory.
 
 Example of content (without <> brackets):
