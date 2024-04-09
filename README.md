@@ -1,5 +1,5 @@
 # The repository is closed.
-# For the actual version, please visit https://github.com/sb-ai-lab/MedBench.
+# For the actual version, please visit https://github.com/sb-ai-lab/MedBench
 
 ## Citation
 ```bibtex
